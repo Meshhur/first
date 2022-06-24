@@ -19,8 +19,8 @@
 
         <!-- Controls -->
         <div class="controls">
-            <button class="controls_play-pause">Play/pause</button>
-            <button class="controls_stop">Stop</button>
+            <button class="controls_play-pause" id="ppbtn" data-video-controller="pause">Play/pause</button>
+            <button class="controls_stop" id="stopbtn" >Stop</button>
 
             <div class="controls-progress">
                 <progress id="progress" value="0" min="0">
@@ -28,9 +28,9 @@
                 </progress>
             </div>
 
-            <button class="controls-mute">Mute</button>
-            <button class="controls-plus">Plus</button>
-            <button class="controls-minus">Minus</button>
+            <button id="mutebtn" class="controls-mute">Mute</button>
+            <button id="plusbtn" class="controls-plus">Plus</button>
+            <button id="minusbtn" class="controls-minus">Minus</button>
         </div>
     </div>
 </body>
