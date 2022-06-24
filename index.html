@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,30 @@
     <script src="main.js" defer></script>
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="wrapper">
+        <!-- Video tag -->
+        <video id="video">
+            <source src="source/video/simple-video.mp4">
+        </video>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button class="controls_play-pause">Play/pause</button>
+            <button class="controls_stop">Stop</button>
+
+            <div class="controls-progress">
+                <progress id="progress" value="0" min="0">
+                    <span id="progress-bar"></span>
+                </progress>
+            </div>
+
+            <button class="controls-mute">Mute</button>
+            <button class="controls-plus">Plus</button>
+            <button class="controls-minus">Minus</button>
+        </div>
+    </div>
 </body>
+
 </html>
